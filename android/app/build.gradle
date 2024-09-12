@@ -29,16 +29,16 @@ if (flutterVersionName == null) {
 android {
     namespace = "com.example.firebase_crud_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion = "26.1.10909125" // Specify the required NDK version
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+     compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17 // Updated to Java 17
+        targetCompatibility = JavaVersion.VERSION_17 // Updated to Java 17
     }
 
     defaultConfig {
         applicationId = "com.example.firebase_crud_app"
-        minSdk = flutter.minSdkVersion
+        minSdk 21
         targetSdk = flutter.targetSdkVersion
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
